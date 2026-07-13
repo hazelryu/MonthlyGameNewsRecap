@@ -1,0 +1,577 @@
+<title>K-Game Business Wire — 2026년 6월-7월 리캡</title>
+<style>
+  :root {
+    --paper: #E7EAEE;
+    --paper-raised: #FBFCFD;
+    --paper-sunk: #DDE1E7;
+    --ink: #12161D;
+    --ink-soft: #454B57;
+    --ink-faint: #6B7280;
+    --rule: #C7CDD6;
+    --accent: #C6341F;
+    --accent-soft: #F4DAD3;
+    --positive: #2E7D5B;
+    --positive-soft: #DCEBE2;
+    --font-display: Batang, "Nanum Myeongjo", Georgia, serif;
+    --font-body: "Malgun Gothic", "Apple SD Gothic Neo", -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: Consolas, "D2Coding", "SF Mono", Menlo, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #12151B;
+      --paper-raised: #1B1F27;
+      --paper-sunk: #0C0E12;
+      --ink: #E9E6DC;
+      --ink-soft: #A7ADB8;
+      --ink-faint: #767D8A;
+      --rule: #2B303B;
+      --accent: #FF6A4D;
+      --accent-soft: rgba(255, 106, 77, 0.16);
+      --positive: #57C98C;
+      --positive-soft: rgba(87, 201, 140, 0.14);
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #12151B;
+    --paper-raised: #1B1F27;
+    --paper-sunk: #0C0E12;
+    --ink: #E9E6DC;
+    --ink-soft: #A7ADB8;
+    --ink-faint: #767D8A;
+    --rule: #2B303B;
+    --accent: #FF6A4D;
+    --accent-soft: rgba(255, 106, 77, 0.16);
+    --positive: #57C98C;
+    --positive-soft: rgba(87, 201, 140, 0.14);
+  }
+  :root[data-theme="light"] {
+    --paper: #E7EAEE;
+    --paper-raised: #FBFCFD;
+    --paper-sunk: #DDE1E7;
+    --ink: #12161D;
+    --ink-soft: #454B57;
+    --ink-faint: #6B7280;
+    --rule: #C7CDD6;
+    --accent: #C6341F;
+    --accent-soft: #F4DAD3;
+    --positive: #2E7D5B;
+    --positive-soft: #DCEBE2;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--font-body);
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wire {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem 4rem;
+  }
+
+  /* Masthead */
+  .kicker {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-bottom: 0.6rem;
+  }
+  .kicker span:last-child { color: var(--ink-faint); letter-spacing: 0.1em; }
+  h1.masthead {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(2.1rem, 5vw, 3.1rem);
+    line-height: 1.15;
+    margin: 0 0 0.5rem;
+    text-wrap: balance;
+    letter-spacing: -0.01em;
+  }
+  .masthead-sub {
+    font-size: 1rem;
+    color: var(--ink-soft);
+    margin: 0 0 1.4rem;
+    max-width: 62ch;
+  }
+  .rule-heavy {
+    border: none;
+    border-top: 3px solid var(--ink);
+    margin: 0 0 0.35rem;
+  }
+  .rule-thin {
+    border: none;
+    border-top: 1px solid var(--rule);
+    margin: 0 0 2rem;
+  }
+
+  /* Stat strip */
+  .stat-strip {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+    margin-bottom: 2.6rem;
+  }
+  .stat {
+    background: var(--paper-raised);
+    padding: 1rem 1.1rem;
+  }
+  .stat-label {
+    font-size: 0.68rem;
+    letter-spacing: 0.06em;
+    color: var(--ink-faint);
+    text-transform: uppercase;
+    margin-bottom: 0.45rem;
+  }
+  .stat-value {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--accent);
+    line-height: 1.1;
+  }
+  .stat-note {
+    font-size: 0.76rem;
+    color: var(--ink-soft);
+    margin-top: 0.35rem;
+  }
+  @media (max-width: 700px) {
+    .stat-strip { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  /* Lede */
+  .lede {
+    font-family: var(--font-display);
+    font-size: 1.18rem;
+    line-height: 1.75;
+    color: var(--ink);
+    max-width: 68ch;
+    margin: 0 0 2.8rem;
+  }
+  .lede::first-letter {
+    font-size: 3.2rem;
+    font-weight: 700;
+    float: left;
+    line-height: 0.85;
+    padding: 0.05em 0.08em 0 0;
+    color: var(--accent);
+  }
+
+  section { margin-bottom: 3rem; }
+  .section-head {
+    display: flex;
+    align-items: baseline;
+    gap: 0.7rem;
+    margin-bottom: 1.1rem;
+  }
+  .section-num {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    color: var(--accent);
+  }
+  h2.section-title {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    margin: 0;
+    letter-spacing: -0.01em;
+  }
+  .section-desc {
+    font-size: 0.85rem;
+    color: var(--ink-faint);
+    margin: -0.6rem 0 1.3rem;
+  }
+
+  /* Timeline */
+  .timeline { border-top: 1px solid var(--rule); }
+  .tl-item {
+    display: grid;
+    grid-template-columns: 84px 1fr;
+    gap: 1rem;
+    padding: 0.95rem 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  .tl-date {
+    font-family: var(--font-mono);
+    font-size: 0.82rem;
+    color: var(--ink-faint);
+    padding-top: 0.15rem;
+    white-space: nowrap;
+  }
+  .tl-body p { margin: 0.15rem 0 0; font-size: 0.92rem; color: var(--ink-soft); }
+  .tl-body strong { color: var(--ink); font-weight: 600; }
+  .tag {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 0.62rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 0.12rem 0.45rem;
+    border-radius: 2px;
+    background: var(--accent-soft);
+    color: var(--accent);
+    margin-right: 0.5rem;
+    vertical-align: middle;
+  }
+  .tag.positive { background: var(--positive-soft); color: var(--positive); }
+  @media (max-width: 560px) {
+    .tl-item { grid-template-columns: 1fr; gap: 0.2rem; }
+  }
+
+  /* Cards */
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+  }
+  .card {
+    background: var(--paper-raised);
+    padding: 1.2rem 1.3rem 1.35rem;
+  }
+  .card h3 {
+    font-family: var(--font-display);
+    font-size: 1.05rem;
+    margin: 0.25rem 0 0.5rem;
+    line-height: 1.35;
+  }
+  .card p {
+    font-size: 0.87rem;
+    line-height: 1.62;
+    color: var(--ink-soft);
+    margin: 0 0 0.6rem;
+  }
+  .src {
+    font-size: 0.72rem;
+    color: var(--ink-faint);
+  }
+  .src a { color: var(--ink-faint); }
+  .src a:hover { color: var(--accent); }
+  @media (max-width: 700px) {
+    .card-grid { grid-template-columns: 1fr; }
+  }
+
+  a { color: inherit; text-decoration-color: var(--rule); }
+  a:hover { color: var(--accent); text-decoration-color: var(--accent); }
+
+  /* Ranking table */
+  .rank-wrap { overflow-x: auto; border: 1px solid var(--rule); }
+  table.rank {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.87rem;
+    min-width: 480px;
+  }
+  table.rank th {
+    text-align: left;
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    padding: 0.65rem 0.9rem;
+    border-bottom: 1px solid var(--rule);
+    background: var(--paper-sunk);
+  }
+  table.rank td {
+    padding: 0.6rem 0.9rem;
+    border-bottom: 1px solid var(--rule);
+    vertical-align: top;
+  }
+  table.rank tbody tr:last-child td { border-bottom: none; }
+  table.rank td.num {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+    color: var(--accent);
+    font-weight: 600;
+    width: 2.5rem;
+  }
+  table.rank td.game { font-weight: 600; color: var(--ink); white-space: nowrap; }
+  table.rank td.note { color: var(--ink-soft); }
+  .rank-caption {
+    font-size: 0.76rem;
+    color: var(--ink-faint);
+    margin-top: 0.6rem;
+  }
+
+  /* Global digest */
+  .digest {
+    border-left: 3px solid var(--ink);
+    padding-left: 1.1rem;
+  }
+  .digest-item { padding: 0.7rem 0; border-bottom: 1px dashed var(--rule); }
+  .digest-item:last-child { border-bottom: none; }
+  .digest-item p { margin: 0.2rem 0 0; font-size: 0.88rem; color: var(--ink-soft); line-height: 1.6; }
+  .digest-item strong { color: var(--ink); }
+
+  /* Checkpoints */
+  .checkpoints { display: grid; gap: 0.6rem; }
+  .cp-row {
+    display: grid;
+    grid-template-columns: 110px 1fr auto;
+    gap: 1rem;
+    align-items: center;
+    padding: 0.7rem 0.9rem;
+    background: var(--paper-raised);
+    border: 1px solid var(--rule);
+  }
+  .cp-date { font-family: var(--font-mono); font-size: 0.8rem; color: var(--ink-faint); }
+  .cp-name { font-size: 0.9rem; color: var(--ink); font-weight: 600; }
+  .cp-tag { font-family: var(--font-mono); font-size: 0.68rem; color: var(--ink-faint); text-transform: uppercase; }
+  @media (max-width: 560px) {
+    .cp-row { grid-template-columns: 1fr; gap: 0.2rem; }
+  }
+
+  footer {
+    margin-top: 3rem;
+    padding-top: 1.2rem;
+    border-top: 1px solid var(--rule);
+    font-size: 0.76rem;
+    color: var(--ink-faint);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+</style>
+
+<div class="wire">
+
+  <div class="kicker">
+    <span>K-GAME BUSINESS WIRE</span>
+    <span>ISSUE · 2026-06 → 2026-07-10</span>
+  </div>
+  <h1 class="masthead">자본이 다시 짠 K-게임 지도</h1>
+  <p class="masthead-sub">6월 한 달 사이 위메이드·카카오게임즈·원스토어의 경영권이 잇따라 넘어갔고, 국산 신작이 모바일 차트를 되찾아왔다. BD 관점에서 놓치면 안 되는 7월 10일까지의 흐름을 정리했다.</p>
+  <hr class="rule-heavy" />
+  <hr class="rule-thin" />
+
+  <div class="stat-strip">
+    <div class="stat">
+      <div class="stat-label">경영권 이전 딜</div>
+      <div class="stat-value">3건</div>
+      <div class="stat-note">위메이드·카카오게임즈·원스토어</div>
+    </div>
+    <div class="stat">
+      <div class="stat-label">붉은사막 누적 판매</div>
+      <div class="stat-value">600만</div>
+      <div class="stat-note">K-콘솔 역대 최고 흥행</div>
+    </div>
+    <div class="stat">
+      <div class="stat-label">게임스컴 2026 개막</div>
+      <div class="stat-value">D-47</div>
+      <div class="stat-note">8/26–30, 독일 쾰른</div>
+    </div>
+    <div class="stat">
+      <div class="stat-label">글로벌 감원(2026 누적)</div>
+      <div class="stat-value">3,700+</div>
+      <div class="stat-note">美 비중 약 58%</div>
+    </div>
+  </div>
+
+  <p class="lede">국내 게임업계는 지금 해외 자본발 지각변동의 한복판에 있다. 위메이드 창업주 박관호 의장의 지분 전량이 알리바바 연계 투자사에, 카카오게임즈는 라인야후 체제에, 원스토어는 넥슨 품에 각각 편입되며 단순 지분투자를 넘어 경영권 이전이 잇따랐다. 동시에 하반기는 K-게임의 글로벌 승부수 시즌이다. 펄어비스 '붉은사막'이 600만 장을 돌파하며 K-콘솔의 가능성을 입증했고, 8월 게임스컴에는 크래프톤·엔씨가 신작을 앞세워 나선다. 모바일 매출 차트에서는 넷마블 '솔: 인챈트'가 3주 가까이 1위를 지키며 국산 MMORPG의 반등을 이끌고 있다.</p>
+
+  <section>
+    <div class="section-head">
+      <span class="section-num">01</span>
+      <h2 class="section-title">타임라인 — 6월의 자본 재편</h2>
+    </div>
+    <p class="section-desc">한 달 남짓한 기간에 3건의 경영권 이전이 순차적으로 발생했다. 발생 순서 그대로 정리.</p>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-date">06.18</div>
+        <div class="tl-body"><span class="tag positive">신작</span><strong>넷마블 '솔: 인챈트' 출시</strong><p>리니지M 핵심 개발진이 세운 알트나인 개발 MMORPG. 출시 36시간 만에 매출 100억 원, 최고 동접 15만 명 돌파.</p></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-date">06.22</div>
+        <div class="tl-body"><span class="tag">M&A</span><strong>라인야후, 카카오게임즈 인수 절차 완료</strong><p>특수목적법인 LAAA인베스트먼트가 지분 33.43%로 최대주주 등극(기존 최대주주 카카오는 14.68%로 2대 주주). 김태환·이시우 공동대표 체제 출범.</p></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-date">06.23</div>
+        <div class="tl-body"><span class="tag">투자</span><strong>넥슨, 2,500억 원 게임 펀드 출범</strong><p>투자전문 법인 '넥슨파트너스' 설립, 코나벤처파트너스와 1,200억 원 규모 '코나 글로벌 IP 투자조합' 결성. 시드~시리즈A 스타트업 지원.</p></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-date">06.23</div>
+        <div class="tl-body"><span class="tag">랭킹</span><strong>공정위 대기업집단 지정 — 넥슨 1위 수성</strong><p>공정자산 넥슨 15.1조 원(1위)·넷마블 13조 원(2위)·크래프톤 9.2조 원. 크래프톤은 넵튠 등 인수로 계열사가 9개→21개로 급증.</p></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-date">06.29</div>
+        <div class="tl-body"><span class="tag">M&A</span><strong>컴투스 · 액션스퀘어, 연이은 투자 소식</strong><p>컴투스는 마나코어·노바팩토리 인수로 방치형 RPG 포트폴리오 확장. 액션스퀘어는 장현국 전 위메이드 대표로부터 50억 원+ 전략투자를 유치, 최대주주 변경 예정.</p></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-date">06.30</div>
+        <div class="tl-body"><span class="tag">M&A</span><strong>위메이드, 박관호 의장 지분 SPA 체결</strong><p>보유 지분 39.33% 전량을 알리바바 연계 투자사 네오펄스에 9,200억 원(주당 6만8,910원, 종가 대비 약 3.6배)에 매각. 카카오게임즈 '에버소울'도 같은 날 서비스 종료.</p></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-date">07.01</div>
+        <div class="tl-body"><span class="tag">시장반응</span><strong>위메이드 매각 공식화 — 주가 상한가 직행</strong><p>거래 완료 시 네오펄스 지분율 40.25%로 확대돼 최대주주 지위 확정 예정(10월 말 목표). 시장은 '중국계 자본의 K-게임 IP 침식' 우려와 프리미엄 밸류에이션 기대가 동시에 반영됐다.</p></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-date">07.10</div>
+        <div class="tl-body"><span class="tag positive">신작</span><strong>펄어비스 '붉은사막' 600만 장 돌파</strong><p>상반기 흥행이 하반기 K-콘솔 대형 신작 라인업의 발판이 되며 게임스컴 참가 열기로 이어지는 중.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <span class="section-num">02</span>
+      <h2 class="section-title">한국 M&A · 투자 상세</h2>
+    </div>
+    <div class="card-grid">
+      <div class="card">
+        <span class="tag">경영권 이전</span>
+        <h3>위메이드 — 중국계 자본 품으로</h3>
+        <p>박관호 의장 지분 39.33%(1,335만738주) 전량을 홍콩 Shengsong Investment 소유 네오펄스에 매각. 미르 IP의 중국 사업 가치가 경영권 프리미엄에 반영됐다는 평가.</p>
+        <div class="src"><a href="https://www.fnnews.com/news/202607011504571414">파이낸셜뉴스</a> · <a href="https://www.news1.kr/it-science/game-review/6213326">뉴스1</a> · <a href="https://dealsite.co.kr/articles/164602">딜사이트</a></div>
+      </div>
+      <div class="card">
+        <span class="tag">경영권 이전</span>
+        <h3>카카오게임즈 — 라인야후 체제 출범</h3>
+        <p>LAAA인베스트먼트가 지분 33.43%로 최대주주 등극. 넷슨·라인게임즈 출신 김태환 대표가 글로벌·전략투자·M&A를 총괄하며 일본·동남아 공략을 예고.</p>
+        <div class="src"><a href="https://dealsite.co.kr/articles/164018">딜사이트</a> · <a href="https://www.hankookilbo.com/news/article/A2026062210540002987">한국일보</a> · <a href="https://www.gamemeca.com/en/view.php?gid=1776793">게임메카</a></div>
+      </div>
+      <div class="card">
+        <span class="tag">투자</span>
+        <h3>넥슨 — 펀드 출범 + 원스토어 인수</h3>
+        <p>2,500억 원 규모 게임 투자펀드로 초기 개발사 육성에 나서는 한편, 같은 시기 토종 앱마켓 원스토어 인수를 발표하며 플랫폼 확장에도 속도를 냈다.</p>
+        <div class="src"><a href="https://www.fnnews.com/news/202606231403471768">파이낸셜뉴스</a> · <a href="https://www.gamevu.co.kr/news/articleView.html?idxno=59106">게임뷰</a></div>
+      </div>
+      <div class="card">
+        <span class="tag">M&A</span>
+        <h3>컴투스 · 액션스퀘어</h3>
+        <p>컴투스는 마나코어·노바팩토리를 인수해 방치형 RPG 라인업을 확장. 액션스퀘어는 장현국 전 위메이드 대표의 전략투자를 유치해 최대주주 변경을 앞두고 있다.</p>
+        <div class="src"><a href="https://www.gamemeca.com/view.php?gid=1536975">게임메카</a> · <a href="https://www.sedaily.com/article/20060849">서울경제</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <span class="section-num">03</span>
+      <h2 class="section-title">한국 신작 · 업데이트</h2>
+    </div>
+    <div class="card-grid">
+      <div class="card">
+        <span class="tag positive">신작</span>
+        <h3>넷마블 '솔: 인챈트'</h3>
+        <p>6/18 출시 후 구글·애플 양대 마켓 매출 1위 직행, 7월 1주차까지 17일 연속 수성 중. '신권(神權)' 시스템과 24시간 오프라인 자동성장이 핵심 차별화.</p>
+        <div class="src"><a href="https://www.khgames.co.kr/news/articleView.html?idxno=305610">경향게임스</a></div>
+      </div>
+      <div class="card">
+        <span class="tag positive">신작</span>
+        <h3>펄어비스 '붉은사막'</h3>
+        <p>상반기 출시 후 26일 만에 500만 장, 7월 기준 600만 장 돌파. 한국 콘솔 게임 역대 최고 속도 기록으로 하반기 K-콘솔 기대감의 근거가 됐다.</p>
+        <div class="src"><a href="https://zdnet.co.kr/view/?no=20251219145937">ZDNet Korea</a></div>
+      </div>
+      <div class="card">
+        <span class="tag">업데이트</span>
+        <h3>구작 라인업 리프레시</h3>
+        <p>카카오게임즈 '오딘' 5주년 업데이트로 매출 2위 재탈환, 엔씨 '리니지M' 피닉스(요정 클래스 리부트), 넥슨 '마비노기 모바일' 시즌2, '니케' 여름 수영복 업데이트로 13위→4위 급상승.</p>
+        <div class="src"><a href="https://www.khgames.co.kr/news/articleView.html?idxno=305858">경향게임스</a></div>
+      </div>
+      <div class="card">
+        <span class="tag">서비스 종료</span>
+        <h3>세대 교체 — 종료작들</h3>
+        <p>카카오게임즈 '에버소울'이 6/30 3년 6개월 만에 종료, 넥슨 '카트라이더2'도 출시 2년 만에 철수. 방치형·MMORPG 신작으로 트래픽이 이동하는 흐름과 맞물린다.</p>
+        <div class="src"><a href="https://www.inven.co.kr/webzine/news/?news=315969">인벤</a></div>
+      </div>
+      <div class="card">
+        <span class="tag">하반기 예고</span>
+        <h3>넷마블, 하반기 신작 5종</h3>
+        <p>'나 혼자만 레벨업: KARMA'(트로이 베이커 캐스팅, 9월 중대 발표 예고), '샹그릴라 프론티어: 일곱 최강종', '프로젝트 옥토퍼스', '이블베인', '프로젝트 이지스'가 하반기 라인업.</p>
+        <div class="src"><a href="https://www.inven.co.kr/webzine/news/?news=316202">인벤</a> · <a href="https://www.khgames.co.kr/news/articleView.html?idxno=306074">경향게임스</a></div>
+      </div>
+      <div class="card">
+        <span class="tag">하반기 예고</span>
+        <h3>게임스컴 2026 출격 라인업</h3>
+        <p>크래프톤은 NO LAW·프로젝트 제타·에이지 트위스터·타래: 언바운드에 펍지 스튜디오 미공개 신작까지 5종을 출품. 엔씨는 B2B 부스로 '신더시티'와 글로벌 출시 예정인 '아이온2'를 소개.</p>
+        <div class="src"><a href="https://www.fnnews.com/news/202607051827420677">파이낸셜뉴스</a> · <a href="https://www.asiatoday.co.kr/kn/view.php?key=20260706010002046">아시아투데이</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <span class="section-num">04</span>
+      <h2 class="section-title">한국 모바일 매출 순위</h2>
+    </div>
+    <div class="rank-wrap">
+      <table class="rank">
+        <thead>
+          <tr><th>순위</th><th>게임</th><th>비고</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="num">1</td><td class="game">솔: 인챈트</td><td class="note">17일 연속 1위 수성, '신의 탑' 던전 업데이트</td></tr>
+          <tr><td class="num">2</td><td class="game">리니지M</td><td class="note">피닉스 업데이트 이후 순위 상승</td></tr>
+          <tr><td class="num">4</td><td class="game">승리의 여신: 니케</td><td class="note">여름 수영복 업데이트로 13위 → 4위 급상승</td></tr>
+          <tr><td class="num">5</td><td class="game">WOS: 화이트아웃 서바이벌</td><td class="note">3위 → 5위 하락</td></tr>
+          <tr><td class="num">6</td><td class="game">킹샷</td><td class="note">—</td></tr>
+          <tr><td class="num">7</td><td class="game">라스트 워: 서바이벌</td><td class="note">—</td></tr>
+          <tr><td class="num">8</td><td class="game">한게임 포커 클래식</td><td class="note">—</td></tr>
+          <tr><td class="num">9</td><td class="game">마비노기 모바일</td><td class="note">—</td></tr>
+          <tr><td class="num">10</td><td class="game">메이플키우기</td><td class="note">—</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="rank-caption">기준: 2026년 7월 1주차 · 구글플레이 매출 기준 · 출처 <a href="https://www.khgames.co.kr/news/articleView.html?idxno=306085">경향게임스 주간 모바일 차트</a>. 3위는 원 출처에 특정되지 않아 생략.</p>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <span class="section-num">05</span>
+      <h2 class="section-title">글로벌 다이제스트</h2>
+    </div>
+    <div class="digest">
+      <div class="digest-item">
+        <span class="tag">M&A</span><strong>EA, 550억 달러 사상 최대 LBO</strong>
+        <p>사우디 PIF·실버레이크·어피니티 파트너스 컨소시엄이 EA를 비상장 전환. 6월 말 클로징을 목표로 최종 규제 절차가 진행 중이며, 게임 역사상 최대 규모 차입매수로 기록될 전망.</p>
+      </div>
+      <div class="digest-item">
+        <span class="tag">M&A</span><strong>Scopely, 튀르키예 Loom 약 10억 달러 인수</strong>
+        <p>설립 1년 미만 스튜디오 인수로, 튀르키예의 글로벌 모바일 개발 허브 부상과 사우디 자본의 영향력 확대를 동시에 보여준 딜.</p>
+      </div>
+      <div class="digest-item">
+        <span class="tag">신작</span><strong>GTA 6, 예약 판매 개시</strong>
+        <p>11월 출시 목표로 예약 판매 시작. 특별판 가격은 100달러로 책정, 역대 최대 규모 엔터테인먼트 출시로 꼽힌다.</p>
+      </div>
+      <div class="digest-item">
+        <span class="tag">구조조정</span><strong>감원 한파, Xbox 넘어 확산</strong>
+        <p>2026년 글로벌 누적 감원 3,700명 돌파(미국 약 58%). Bungie·Epic Games가 타격이 컸고, Xbox의 사업 '리셋' 선언 이후 Sony·EA·BioWare로 구조조정 우려가 번지는 중.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <span class="section-num">06</span>
+      <h2 class="section-title">다음 체크포인트</h2>
+    </div>
+    <div class="checkpoints">
+      <div class="cp-row"><div class="cp-date">07.16</div><div class="cp-name">프로야구 스피리츠 2026</div><div class="cp-tag">시리즈 첫 한국어</div></div>
+      <div class="cp-row"><div class="cp-date">07.21</div><div class="cp-name">제로 스페이스 · Unite Seoul 2026</div><div class="cp-tag">신작 · 컨퍼런스</div></div>
+      <div class="cp-row"><div class="cp-date">07.28</div><div class="cp-name">에버퀘스트 레전드</div><div class="cp-tag">신작 출시 확정</div></div>
+      <div class="cp-row"><div class="cp-date">08.13</div><div class="cp-name">'월희' 리메이크 한국어판</div><div class="cp-tag">PS4·Switch</div></div>
+      <div class="cp-row"><div class="cp-date">08.20–21</div><div class="cp-name">Unreal Fest Seoul 2026</div><div class="cp-tag">컨퍼런스</div></div>
+      <div class="cp-row"><div class="cp-date">08.26–30</div><div class="cp-name">게임스컴 2026 (쾰른)</div><div class="cp-tag">크래프톤 5종 · 엔씨 B2B</div></div>
+    </div>
+  </section>
+
+  <footer>
+    <span>daily-game-industry-newsletter(Notion) 기록 + 웹 검색 보완 · 2026-07-10 작성</span>
+    <span>VNG BD Intelligence</span>
+  </footer>
+
+</div>
